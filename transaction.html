@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Layout with Gap</title>
+  <title>Separate Left Sections</title>
   <style>
     * {
       margin: 0;
@@ -12,57 +12,84 @@
     }
 
     html, body {
+      height: 100%;
       font-family: Arial, sans-serif;
     }
 
-    .container {
+    .layout {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
-      height: 100vh; /* Full viewport height */
-      gap: 40px; /* space between left and right */
-      padding: 20px; /* outer padding */
+      height: 100vh;
+      gap: 20px;
+      padding: 20px;
       background-color: #f8f9fa;
     }
 
-    .left, .right {
-      flex: 1;
+    .left-top,
+    .left-bottom,
+    .right {
       padding: 20px;
       border-radius: 8px;
     }
 
-    .left {
+    .left-top {
       background-color: #cce5ff;
+      flex: 3;
+    }
+
+    .left-bottom {
+      background-color: #b8daff;
+      flex: 3;
     }
 
     .right {
       background-color: #d4edda;
+      flex: 1;
     }
 
-    /* Responsive: Stack on smaller screens */
+    .left-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+      gap: 20px;
+    }
+
     @media (max-width: 768px) {
-      .container {
+      .layout {
         flex-direction: column;
       }
 
-      .left, .right {
+      .left-wrapper {
+        flex-direction: column;
+      }
+
+      .left-top,
+      .left-bottom,
+      .right {
         flex: none;
-        height: 50%;
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="left">
-      <h2>Left Content</h2>
-      <p>This is the left side of the layout.</p>
+  <div class="layout">
+    <!-- Left side with two separate panels -->
+    <div class="left-wrapper">
+      <div class="left-top">
+        <h2>Left Top</h2>
+        <p>This is the top left panel.</p>
+      </div>
+      <div class="left-bottom">
+        <h2>Left Bottom</h2>
+        <p>This is the bottom left panel.</p>
+      </div>
     </div>
+
+    <!-- Right side -->
     <div class="right">
-      <h2>Right Content</h2>
-      <p>This is the right side of the layout.</p>
+      <h2>Right</h2>
+      <p>This is the right panel.</p>
     </div>
   </div>
 
