@@ -2,25 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Left and Right Content</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout with Gap</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
     .container {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
+      align-items: stretch;
+      height: 100vh; /* Full viewport height */
+      gap: 20px; /* space between left and right */
+      padding: 20px; /* outer padding */
+      background-color: #f8f9fa;
+    }
+
+    .left, .right {
+      flex: 1;
       padding: 20px;
-      background-color: #f0f0f0;
+      border-radius: 8px;
     }
+
     .left {
-      width: 45%;
       background-color: #cce5ff;
-      padding: 10px;
-      border-radius: 8px;
     }
+
     .right {
-      width: 45%;
       background-color: #d4edda;
-      padding: 10px;
-      border-radius: 8px;
+    }
+
+    /* Responsive: Stack on smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        flex: none;
+        height: 50%;
+      }
     }
   </style>
 </head>
