@@ -32,31 +32,64 @@
       height: 100%;
       border-radius: 8px;
     }
-
+    .button {
+        display: flex;
+    width: 273px;
+    height: 68px;
+    align-items: center;
+    gap: var(--sds-size-space-400);
+    flex-shrink: 0;
+    }
+    .Category {
+    display: flex;
+    width: 102px;
+    height: 47px;
+    margin-top: 10px;
+    padding-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
-
+<!--search and category-->
     <div class="container-fluid border-bottom py-3">
         <div class="d-flex align-items-center justify-content-between">
-         <a class="navbar-brand" href="#">
-            <img src="Screenshot 2025-04-23 123100.png" alt="Logo" width="95">
-         </a>
-
-      <div class="d-flex align-items-center gap-2">
-        <div class="input-group search-bar">
-          <select class="form-select">
-            <option>Category</option>
-          </select>
-          <input type="text" class="form-control" placeholder="Hinted search text">
-          <button class="btn btn-outline-secondary"><i class="bi bi-search"></i></button>
+            <a class="navbar-brand" href="#">
+                <img src="Screenshot 2025-04-23 123100.png" alt="Logo" width="120">
+            </a>
+                <div class="d-flex align-items-center gap-2 ">
+                    <div class="input search-bar">
+                        <input type="text" class="form-control" placeholder="Lets find some things!">
+                        <div class="container px-4"></div>
+                            <div class="row gx-5">
+                                <div class="col">
+                                    <select class="input-group search-bar ">
+                                        <option>Category</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+            <!--sign in and log in-->
+                        <div class="container overflow-hidden">
+                            <div class="row gx-1">
+                            <div class="col">
+                            <div class="p-0">
+                                    <a href="#" class="btn btn-success">Log In</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-0">
+                                    <a href="#" class="btn btn-outline-success">Sign Up</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
-
-        <button class="btn btn-outline-dark">Log in</button>
-        <button class="btn btn-success">Sign Up</button>
-      </div>
     </div>
-  </div>
+
 
   <div class="container-fluid green-banner text-white">
     <div class="container d-flex justify-content-between gap-3">
