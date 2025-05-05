@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Card</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 10px;
+      background: #f7f7f7;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .left, .middle, .right {
+      flex: 1;
+    }
+
+    .left img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    .middle h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .middle .price {
+      font-size: 24px;
+      color: green;
+      margin: 1px 0;
+    }
+
+    .colors button {
+      padding: 5px 7px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .description {
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .qty {
+      margin-bottom: 10px;
+    }
+
+    .qty input {
+      width: 50px;
+      padding: 3px;
+    }
+
+    .actions button {
+      background-color: #00c853;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .actions button:nth-child(2) {
+        outline: 2px solid;
+        outline-color: green;
+        background-color: #f7f7f7;
+        color: black;
+        align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+
+<div class="product-card">
+  <!-- Left -->
+  <div class="left">
+    <img src="image.png" alt="Product">
+  </div>
+
+  <!-- Middle -->
+  <div class="middle">
+    <h2>LIGER Handsfree Headset L-10</h2>
+    <p class="price">Rp19.000</p>
+    <div class="colors">
+      <span>Pilih warna:</span>
+      <button>Hitam</button>
+      <button>Biru</button>
+      <button style="background-color: red; color: white;">Merah</button>
+    </div>
+    <div class="description">
+      <p>Handsfree stereo bass dengan kabel 115cm, tombol remote, dan kualitas suara jernih. Nyaman digunakan dan cocok untuk semua perangkat.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis quo consequatur cum aspernatur qui distinctio provident dolor iure necessitatibus, amet, perspiciatis quia excepturi. Quibusdam earum incidunt cum dignissimos aut quo ea laboriosam ab aliquam molestias optio voluptatem ex odio tempora, cupiditate, error dolore vitae tenetur sunt repellat, consequatur totam nulla recusandae dolores? Incidunt iure officiis, impedit sapiente mollitia iusto, sequi quod architecto libero facere obcaecati suscipit nesciunt! Totam nulla earum voluptas hic. Odit aliquam at doloribus, repellat numquam pariatur rem minima, est porro suscipit, consectetur autem facilis fuga amet quidem quasi voluptatum sint natus inventore assumenda maiores neque dicta. Eveniet asperiores cumque porro, accusamus obcaecati facilis unde modi, amet at aspernatur reiciendis architecto sed animi eos ipsa libero odit. Dignissimos sit, minima atque autem ut expedita ratione magnam odio minus architecto tenetur necessitatibus dicta vitae exercitationem obcaecati debitis laborum, omnis reprehenderit odit quibusdam amet nesciunt! Rerum numquam consectetur, esse delectus nisi odit a praesentium amet tempore nesciunt quaerat harum. Quasi pariatur optio velit dolore corporis aut debitis vitae dicta rerum exercitationem dignissimos sapiente quas suscipit quisquam reprehenderit, sequi esse. Et impedit dolorum architecto aliquam voluptatem praesentium ipsam sint corporis voluptate, iusto officiis cupiditate esse tempora? Veritatis, enim quis. Voluptatum?</p>
+    </div>
+  </div>
+
+  <!-- Right -->
+  <div class="right">
+    <div class="qty">
+      <label for="qty">Jumlah:</label><br>
+      <input type="number" id="qty" value="1" min="1">
+      <p>Stok: 10.900</p>
+    </div>
+    <div class="actions">
+      <button>+ Keranjang</button>
+      <button>Beli</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
