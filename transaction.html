@@ -29,20 +29,22 @@
     .left-wrapper {
       display: flex;
       flex-direction: column;
-      flex: 3;           /* 3 parts of remaining space */
+      flex: 4;           /* 3 parts of remaining space */
       gap: 20px;
     }
     .left-top {
-      flex: 1;           /* 1 part of left-wrapper */
-      background-color: #cce5ff;
+      flex: 2;           /* 1 part of left-wrapper */
+      /* background-color: #cce5ff; */
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 15px;
+      border: ridge;
     }
     .left-bottom {
       flex: 4;           /* 4 parts of left-wrapper */
-      background-color: #b8daff;
+      /* background-color: #b8daff; */
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 15px;
+      border: ridge;
     }
     
 
@@ -71,7 +73,7 @@
     table{
       margin-top: 30px;
       border: ridge;
-      background-color: aliceblue;
+      background-color: whitesmoke;
       width: 800px;
       border-radius: 15px;
     }
@@ -87,8 +89,9 @@
     .right {
       flex: 1;           /* 1 part of remaining space */
       max-width: 450px;
-      background-color: aquamarine;
+      /* background-color: aquamarine; */
       padding: 20px;
+      border: ridge;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
@@ -104,7 +107,7 @@
     .right-button button {
       padding: 12px 24px;
       font-size: 18px;
-      background-color: #007bff;
+      background-color: green;
       color: #fff;
       border: none;
       border-radius: 6px;
@@ -112,7 +115,27 @@
       transition: background-color 0.2s ease;
     }
     .right-button button:hover {
-      background-color: #0056b3;
+      background-color: whitesmoke;
+      color: black;
+    }
+
+    .table-button{
+      background-color: green;
+      color: white;
+      width: 50px;
+      height: 20px;
+      padding: 12 24px;
+    }
+
+    .table-button:hover  {
+      background-color: whitesmoke;
+      color: black;
+    }
+
+    .table-left-bottom{
+      padding: 12 24px;
+      margin-top: 40px;
+      height: 50px;
     }
 
     /* RESPONSIVE */
@@ -151,16 +174,16 @@
             <table class="bordered-table">
               <tr>
                 <th>Ekonomi(9,000)</th>
-                <p>bisa cod</p>
-                <th>Lastname</th>
               </tr>
               <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
+                <td>Pakai Asuransi Pengiriman (Rp200)</td>
+                <td><button type="button" class="table-button">Apply</button></td>
               </tr>
+            </table>
+            <table class="table-left-bottom">
               <tr>
-                <td>Lois</td>
-                <td>Griffin</td>
+                <td>Kasih Catatan</td>
+                <td>0/200</td>
               </tr>
             </table>
           </div>
