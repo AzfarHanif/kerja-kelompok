@@ -1,76 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Separate Left Sections</title>
   <style>
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html, body {
       height: 100%;
       font-family: Arial, sans-serif;
     }
 
+    /* MAIN LAYOUT */
     .layout {
       display: flex;
       height: 100vh;
       gap: 20px;
-      padding: 20px;
+      padding: 80px;
       background-color: #f8f9fa;
     }
 
-    .left-top,
-    .left-bottom,
-    .right {
-      width: 100%;
-      padding: 20px;
-      max-width: 1280px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .left-top {
-      background-color: #cce5ff;
-      flex: 1;
-    }
-
-    .left-bottom {
-      background-color: #b8daff;
-      flex: 4;
-    }
-
-    .right {
-      width: 100%;
-      max-width: 450px;
-      height: auto; /* or adjust proportionally */
-    }
-
+    /* LEFT COLUMN (wrapper for two panels) */
     .left-wrapper {
       display: flex;
       flex-direction: column;
-      flex: 3;
+      flex: 3;           /* 3 parts of remaining space */
       gap: 20px;
     }
+    .left-top {
+      flex: 1;           /* 1 part of left-wrapper */
+      background-color: #cce5ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .left-bottom {
+      flex: 4;           /* 4 parts of left-wrapper */
+      background-color: #b8daff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    
 
+    .imagesection {
+      display: flex;
+      /* height: 200px; */
+    }
+
+    .imgleftsection{        
+      /* width: 200px; */
+      height: auto;
+      margin-top: 30px;
+    }
+
+    .small-image{
+      border-radius: 15px;
+    }
+
+    .imgrightsection{
+      /* width: 200px; */
+      height: auto;
+      margin-top: 30px;
+      margin-left: 40px;
+    }
+
+    table{
+      margin-top: 30px;
+      border: ridge;
+      background-color: aliceblue;
+      width: 800px;
+      border-radius: 15px;
+    }
+
+    .bordered-table th,
+    .bordered-table td {
+      border: black;
+      padding: 8px;
+    }
+
+
+    /* RIGHT COLUMN */
+    .right {
+      flex: 1;           /* 1 part of remaining space */
+      max-width: 450px;
+      background-color: aquamarine;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* BUTTON STYLES */
+    .right-button {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .right-button button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .right-button button:hover {
+      background-color: #0056b3;
+    }
+
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       .layout {
         flex-direction: column;
+        padding: 20px;
       }
-
-      .left-wrapper {
-        flex-direction: column;
-      }
-
-      .left-top,
-      .left-bottom,
+      .left-wrapper,
       .right {
         flex: none;
         width: 100%;
+        max-width: none;
       }
     }
   </style>
@@ -78,28 +133,50 @@
 <body>
 
   <div class="layout">
-    <!-- Left side with two separate panels -->
     <div class="left-wrapper">
       <div class="left-top">
         <h2>Left Top</h2>
         <p>This is the top left panel.</p>
       </div>
       <div class="left-bottom">
-<<<<<<< HEAD
         <h2>Left Bottom</h2>
         <p>This is the bottom left panel.</p>
-=======
-        <h1>Not Ur Business</h1>
-        <img src="kerja-kelompok/assets/tes.jpg" alt="">
-        <h3>This is the bottom left panel.</h3>
->>>>>>> e71794be96c3965fbc16fe1bd68a8a98c8ac7b7f
+        <div class="imagesection">
+          <div class="imgleftsection">
+            <img src="image.png" alt="small icon" class="small-image">
+          </div>
+          <div class="imgrightsection">
+            <h3>Samsung Note 20 Ultra 12/512GB</h3>
+            <p></p>
+            <table class="bordered-table">
+              <tr>
+                <th>Ekonomi(9,000)</th>
+                <p>bisa cod</p>
+                <th>Lastname</th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+       
       </div>
     </div>
 
-    <!-- Right side -->
     <div class="right">
-      <h2>Right</h2>
-      <p>This is the right panel.</p>
+      <div>
+        <h2>Right</h2>
+        <p>This is the right panel.</p>
+      </div>
+      <div class="right-button">
+        <button type="button">Large button</button>
+      </div>
     </div>
   </div>
 
