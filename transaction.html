@@ -15,6 +15,17 @@
       height: 100%;
       font-family: Arial, sans-serif;
     }
+    body {
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
 
     /* MAIN LAYOUT */
     .layout {
@@ -22,7 +33,7 @@
       height: 100vh;
       gap: 20px;
       padding: 80px;
-      background-color: #f8f9fa;
+      /* background-color: #f8f9fa; */
     }
 
     th, td {
@@ -102,7 +113,7 @@
     .left-table{
       margin-top: 30px;
       border: ridge;
-      background-color: whitesmoke;
+      /* background-color: whitesmoke; */
       /* width: 800px; */
       border-radius: 5px;
     }
@@ -223,6 +234,7 @@
   <div class="layout">
     <div class="left-wrapper">
       <div class="left-top">
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
         <h2>Dira Anastasya</h2>
         <p>Rumah</p>
         <p>Pesona Cilegon</p>
@@ -309,5 +321,6 @@
     </div>
   </div>
 
+  <script src="scripts.js"></script>
 </body>
 </html>

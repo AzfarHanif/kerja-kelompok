@@ -1,8 +1,17 @@
 /* ===== General Reset and Base ===== */
-body {
-    background-color: #f6f7f8;
+
+  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
   }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+
   
   /* ===== Navbar Custom ===== */
   .navbar {
