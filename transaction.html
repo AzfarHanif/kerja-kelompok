@@ -51,6 +51,14 @@
       border: ridge;
     }
     
+    .left-table,
+    .table-left-bottom,
+    .right-table-bottom,
+    .summary-table {
+      width: 100%;
+      max-width: 100%;
+    }
+
 
     .imagesection {
       display: flex;
@@ -78,7 +86,7 @@
       margin-top: 30px;
       border: ridge;
       background-color: whitesmoke;
-      width: 800px;
+      /* width: 800px; */
       border-radius: 5px;
     }
 
@@ -91,7 +99,7 @@
 
     /* RIGHT COLUMN */
     .right {
-      flex: 2 ;           /* 1 part of remaining space */
+      flex: 2 ;         
       max-width: 450px;
       /* background-color: aquamarine; */
       padding: 20px;
@@ -102,12 +110,33 @@
       justify-content: space-between;
     }
     
-    .right-table{
+    .payment-methods{
+      list-style-type: none;
+      padding-top: 15px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; 
+      font-weight: bold;
+      max-height: 200px;       
+      overflow-y: auto;        
+      padding-right: 10px;     
+    }
+
+    .right-table-bottom{
       margin-top: 30px;
-      /* border: ridge; */
-      background-color: whitesmoke;
-      width: 200px;
+      border: ridge;
+      border-color: aqua;
+      background-color: skyblue;
+      /* background-color: whitesmoke; */
+      /* width: 400px; */
       border-radius: 5px;
+    }
+
+    .summary-table {
+      padding-top: 10px;
+      /* width: 500px; */
     }
 
     /* BUTTON STYLES */
@@ -148,9 +177,13 @@
       padding: 12 24px;
       margin-top: 40px;
       height: 50px;
-      width: 800px;
+      width: 75s0px;
       border-radius: 5px;
       border: ridge;
+    }
+
+    .harga {
+      padding-top: 20px;
     }
 
     /* RESPONSIVE */
@@ -188,17 +221,21 @@
             <p></p>
             <table class="left-table">
               <tr>
-                <th>Ekonomi(9,000)</th>
+                <th colspan="2">Ekonomi (9,000)</th>
               </tr>
               <tr>
                 <td>Pakai Asuransi Pengiriman (Rp200)</td>
-                <td><button type="button" class="table-button">Apply</button></td>
+                <td style="text-align: right;">
+                  <button type="button" class="table-button">Apply</button>
+                </td>
               </tr>
             </table>
             <table class="table-left-bottom">
               <tr>
                 <td>Kasih Catatan</td>
-                <td>0/200</td>
+                <td style="text-align: right;">
+                  0/200
+                </td>
               </tr>
             </table>
           </div>
@@ -209,31 +246,41 @@
 
     <div class="right">
       <div>
-        <h2>Right</h2>
-        <p>This is the right panel.</p>
-        <table class="right-table">
+        <h2>Metode Pembayaran</h2>
+        <p>Lihat Semua</p>
+        <ul class="payment-methods">
+          <li>BCA</li>
+          <li>MANDIRI</li>
+          <li>BUKOPIN</li>
+          <li>HANA</li>
+          <li>BRI</li>
+          <li>GOPAY</li>
+          <li>OVO</li>
+          <li>Dana</li>
+          <li>I.saku</li>
+        </ul>
+        <table class="right-table-bottom">
           <tr>
-            <th>BCA</th>
-          </tr>
-          <tr>
-            <th>MANDIRI</th>
-          </tr>
-          <tr>
-            <th>BUKOPIN</th>
-          </tr>
-          <tr>
-            <th>HANA</th>
-          </tr>
-          <tr>
-            <th>BRI</th>
-          </tr>
-          <tr>
-            <th>GOPAY</th>
-          </tr>
-          <tr>
-            <th>OVO</th>
+            <th>Pakai promo biar makin hemat!</th>
           </tr>
         </table>
+        <h2 class="harga">Cek ringkasan kamu, yu!</h2>
+        <table class="summary-table">
+          <tr>
+            <td>Total harga</td>
+            <td>32.000</td>
+          </tr>
+          <tr>
+            <td>Diskon</td>
+            <td>4.000</td>
+          </tr>
+          <tr>
+            <td>Harga akhir</td>
+            <td>28.000</td>
+          </tr>
+        </table>
+        
+        
       </div>
       <div class="right-button">
         <button type="button">Large button</button>
