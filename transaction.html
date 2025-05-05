@@ -20,14 +20,17 @@
       display: flex;
       height: 100vh;
       gap: 20px;
-      padding: 120px;
+      padding: 20px;
       background-color: #f8f9fa;
     }
 
     .left-top,
     .left-bottom,
     .right {
+      width: 100%;
       padding: 20px;
+      max-width: 1280px;
+      height: auto;
       border-radius: 8px;
     }
 
@@ -38,12 +41,13 @@
 
     .left-bottom {
       background-color: #b8daff;
-      flex: 5;
+      flex: 4;
     }
 
     .right {
-      background-color: #d4edda;
-      flex: 1;
+      width: 100%;
+      max-width: 450px;
+      height: auto; /* or adjust proportionally */
     }
 
     .left-wrapper {
@@ -77,12 +81,11 @@
     <!-- Left side with two separate panels -->
     <div class="left-wrapper">
       <div class="left-top">
-        <h1>Alamat Pengiriman</h1>
-        <h3>Home : Dira's Home</h3>
-        <p>Grand Pesona Cilegon Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt vitae corrupti mollitia ea ad asperiores laborum! Aut.</p>
+        <h2>Left Top</h2>
+        <p>This is the top left panel.</p>
       </div>
       <div class="left-bottom">
-        <h1>Not Ur Business</h1>
+        <h2>Left Bottom</h2>
         <p>This is the bottom left panel.</p>
       </div>
     </div>
