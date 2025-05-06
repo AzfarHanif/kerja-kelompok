@@ -28,35 +28,59 @@
       flex: 1;
       background: white;
       padding: 20px;
-      border: 1px solid #ccc;
       min-width: 250px;
+      max-width: 600px; 
     }
+
+  .card-side {
+    width: fit-content; 
+    height: fit-content; 
+    flex: none; 
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    border: ridge;
+    margin: 10px;
+    padding: 20px;
+    }
+
+.card-side input {
+  width: 50px;
+}
+
+.card-side button {
+  padding: 5px 10px;
+  border: 1px solid green;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-side .add {
+  background-color: green;
+  color: white;
+}
+
+.card-side .buy {
+  background-color: white;
+  color: green;
+}
+
     </style>
 </head>
 <body>
     <div class="row">
           <div class="section">
-            <h2>Dira Anastasya</h2>
-            <p>Rumah</p>
-            <p>Pesona Cilegon</p>
-            <h4>08111330439</h4>
+            <img src="image.png" alt="">
           </div>
     
         <div class="section">
           <div>
-            <h2>Metode Pembayaran</h2>
-            <p>Lihat Semua</p>
-            <ul class="payment-methods">
-              <li>BCA</li>
-              <li>MANDIRI</li>
-              <li>BUKOPIN</li>
-              <li>HANA</li>
-              <li>BRI</li>
-              <li>GOPAY</li>
-              <li>OVO</li>
-              <li>Dana</li>
-              <li>I.saku</li>
-            </ul>
+            <h2>Samsung Galaxy Note 20 Ultra 12/512GB</h2>
+            <h4 style="color: green;">Rp. 19.999.999</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vero commodi quam porro harum magnam architecto, soluta, incidunt nihil corrupti dolor in quasi illum suscipit corporis, odio libero amet rerum! Necessitatibus eius optio iusto, consequuntur nihil dolores corporis molestiae in alias architecto nostrum nesciunt maiores consequatur aspernatur provident ratione tempore cum deleniti. Quas earum perspiciatis explicabo obcaecati totam vel culpa vero illum? Quod dolores amet provident et error tempore pariatur esse dolorem itaque eum. Repellat inventore nemo eligendi provident saepe rerum accusamus magnam rem placeat, esse accusantium veritatis, iusto, repudiandae expedita? Ipsum fugiat reiciendis hic similique accusantium incidunt mollitia ut cum perspiciatis culpa repellendus officiis illum et eligendi sequi, a quidem maxime unde dignissimos odit labore nostrum natus assumenda nemo. Aspernatur consequatur aperiam totam. Dicta quam quidem commodi corporis molestias aut vel iusto esse porro culpa vero exercitationem expedita quis, repellat nesciunt repellendus adipisci consequatur rem, rerum eius? Facere doloribus molestiae repudiandae commodi consequuntur quidem non, magni nobis omnis dolore voluptates tenetur dicta error fuga id! Error modi repellat ipsam tempora? Incidunt quia expedita ad, dicta consequatur dolore repellat odit alias a, assumenda beatae voluptatibus accusamus quo odio corporis! Quo suscipit neque eius consectetur nam dolorum facere dolores nostrum soluta!</p>
             <table class="right-table-bottom">
               <tr>
                 <th>Pakai promo biar makin hemat!</th>
@@ -64,23 +88,18 @@
             </table>        
           </div>
         </div>
-        <div class="section">
-            <div>
-              <h2>Metode Pembayaran</h2>
-              <p>Lihat Semua</p>
-              <ul class="payment-methods">
-                <li>BCA</li>
-                <li>MANDIRI</li>
-                <li>BUKOPIN</li>
-                <li>HANA</li>
-                <li>BRI</li>
-                <li>GOPAY</li>
-                <li>OVO</li>
-                <li>Dana</li>
-                <li>I.saku</li>
-              </ul>
-            </div>
-          </div>
+        <div class="card-side">
+          <h1>Atur Jumlah Dan Catatan</h1>
+          <label>Jumlah: <input type="number" value="1"></label>
+          <p>Stok: 10.900</p>
+          <p>Subtotal: 19.999.999</p>
+          <button class="add">+ Keranjang</button>
+          <button class="buy">Beli</button>
+        </div>
+      </div>
+      
+      <div class="review">
+        
       </div>
 </body>
 </html>
