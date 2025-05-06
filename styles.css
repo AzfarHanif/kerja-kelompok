@@ -356,6 +356,18 @@
   }
 
   /* ===== PRODUCT CARD (ALTERNATIVE) ===== */
+  .products{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Ini yang dorong ke bawah */
+  }
+
+  .product-grid{
+    display: flex;
+    justify-content: center; /* Tengah-tengah horizontal */
+    gap: 2rem; /* Jarak antar card */
+  }
+
   .product-card {
     border: 1px solid #eaeaea;
     border-radius: 8px;
