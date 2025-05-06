@@ -15,3 +15,13 @@ document.getElementById('toggle-dark-mode').addEventListener('click', function (
     icon.src = 'assets/icons/light_mode.png';
   }
 });
+
+document.querySelector('.trigger-btn').addEventListener('click', showPopup);
+
+function showPopup() {
+  document.getElementById('popupOverlay').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popupOverlay').style.display = 'none';
+}

@@ -15,6 +15,7 @@
     color: #e9f8ea;
   }
 
+
   /* ===== NAVBAR ===== */
   .navbar {
     background-color: #ffffff;
@@ -29,13 +30,27 @@
     text-decoration: none;
   }
 
-  .button-dark-mode {
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
+  .toggle-button{
+    align-items: center;
   }
-  
+
+  #toggle-dark-mode {
+    transform: scale(1.5);
+    margin-right: 50px;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    border-radius: 10px;
+    background-color: #2e7d32;
+    color: #e9f8ea;
+  }
 
   .form-select,
   .form-control {
@@ -133,7 +148,6 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
     padding: 40px 32px;
-    justify-content: end;
   }
 
   /* ===== CARD SIDE (e.g. Checkout Panel) ===== */
@@ -366,14 +380,16 @@
   /* ===== PRODUCT CARD (ALTERNATIVE) ===== */
   .products{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end; /* Ini yang dorong ke bawah */
+    flex-direction: column;
+    /* justify-content: flex-end; Ini yang dorong ke bawah */
   }
 
   .product-grid{
     display: flex;
     justify-content: center; /* Tengah-tengah horizontal */
     gap: 2rem; /* Jarak antar card */
+    height: auto;
+    width: auto;
   }
 
   .product-card {
@@ -381,6 +397,15 @@
     border-radius: 8px;
     padding: 16px;
     text-align: center;
+  }
+
+  .product-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .dark-mode .product-card:hover
+  {
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
   }
 
   .product-card img {
@@ -397,6 +422,34 @@
   .product-card p {
     font-size: 16px;
     color: #555;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none; /* Sembunyikan awalnya */
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .popup {
+    background: #1e1e1e;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .popup h2 {
+    margin-top: 0;
   }
 
   /* ===== FOOTER ===== */
