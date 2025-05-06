@@ -4,94 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
-    
-
-    /* MAIN LAYOUT */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      /* border: ridge; */
-      gap: 20px;
-      padding: 80px;
-    }
-
-    .section {
-      flex: 1;
-      background: white;
-      padding: 20px;
-      min-width: 250px;
-      max-width: 600px; 
-    }
-
-  .card-side {
-    width: fit-content; 
-    height: fit-content; 
-    flex: none; 
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    border: ridge;
-    margin: 10px;
-    padding: 20px;
-    }
-
-.card-side input {
-  width: 50px;
-}
-
-.card-side button {
-  padding: 5px 10px;
-  border: 1px solid green;
-  background-color: white;
-  cursor: pointer;
-  width: 100%;
-}
-
-.card-side .add {
-  background-color: green;
-  color: white;
-}
-
-.card-side .buy {
-  background-color: white;
-  color: green;
-}
-
-.review {
-  margin: 80px;
-  border: ridge;
-}
-
-.row-review {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: ridge; */
-  gap: 20px;
-}
-
-.left, .mid, .right{
-  flex: 1;
-  background: white;
-  padding: 20px;
-  min-width: 250px;
-  max-width: 600px; 
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="row">
@@ -125,15 +38,16 @@
         <h2 style="margin: 10px;">Ulasan Pembeli</h2>
         <div class="container">
           <div class="row-review">
-            <div class="left">
+            <div class="left-buy">
               <h1>4.7/5.0</h1>
               <h2>94% merasa puas</h2>
               <h4>19 rating . 10 ulasan</h4>
             </div>
-            <div class="mid">tes</div>
-            <div class="right">tes</div>
+            <div class="mid-buy">tes</div>
+            <div class="right-buy">tes</div>
           </div>
         </div>
       </div>
+      <script src="scripts.js"></script>
 </body>
 </html>
