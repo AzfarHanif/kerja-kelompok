@@ -29,6 +29,14 @@
     text-decoration: none;
   }
 
+  .button-dark-mode {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+
   .form-select,
   .form-control {
     border-radius: 8px;
