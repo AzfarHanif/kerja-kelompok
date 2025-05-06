@@ -6,19 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header/Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
     <a class="navbar-brand" href="#">LOGO! IPSUM</a>
     <div class="ms-auto d-flex gap-2">
       <select class="form-select w-auto">
         <option selected>Category</option>
-        <option value="1">Cosmetics</option>
-        <option value="2">Men Wear</option>
-        <option value="3">Women Wear</option>
-        <option value="4">Electronics</option>
+        <option value="1">Samsung</option>
+        <option value="2">Xiaomi</option>
+        <option value="3">Huawei</option>
+        <option value="4">Iphone</option>
       </select>
       <input class="form-control me-2" type="search" placeholder="Search here">
       <button class="btn btn-success">Search</button>
@@ -29,17 +31,18 @@
   </nav>
 
   <!-- Main Content -->
-  <div class="container my-4">
-    <h3 class="mb-4">Search Results</h3>
+  <div class="container my-5">
+    <h3 class="mb-4">Samsung Smartphone Deals</h3>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
       <!-- Card 1 -->
       <div class="col">
         <div class="card h-100">
-          <img src="SAMSUNG-S25-ULTRA2.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Samsung S25 Ultra </h5>
-            <p class="card-text">Samsung Galaxy S25 Ultra adalah smartphone premium yang memiliki layar 6,9 inci Quad HD+ Dynamic AMOLED, chipset Snapdragon 8 Elite, dan quad kamera belakang dengan lensa utama 200MP. Smartphone ini memiliki RAM 12GB, penyimpanan internal 256GB/512GB/1TB, dan baterai 5000mAh dengan fast charging, dan sudah bisa menggunakan teknologi 5G. </p>
-            <a href="#" class="btn btn-success w-100">Buy Now</a>
+          <img src="SAMSUNG-S25-ULTRA2.jpg" class="card-img-top" alt="Samsung S25 Ultra">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Samsung S25 Ultra</h5>
+            <p class="card-text">Layar 6,9" AMOLED QHD+, Snapdragon 8 Elite, kamera 200MP, RAM 12GB, hingga 1TB.</p>
+            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
@@ -47,11 +50,11 @@
       <!-- Card 2 -->
       <div class="col">
         <div class="card h-100">
-          <img src="s-note-20-ultra3.jpeg" class="card-img-top" alt="Product 2">
-          <div class="card-body">
-            <h5 class="card-title">Samsung note 20 ultra</h5>
-            <p class="card-text">Galaxy Note 20 Ultra ini memiliki kapasitas RAM lebih besar. Jika Galaxy Note 20 Ultra reguler hanya memiliki RAM 8 GB, maka versi 5G memiliki RAM 12 GB LPPDR5 dan dua opsi memori internal yakni 256 serta 512 GB, dan telah menggunakan 5G.</p>
-            <a href="#" class="btn btn-success w-100">Buy Now</a>
+          <img src="s-note-20-ultra3.jpeg" class="card-img-top" alt="Samsung Note 20 Ultra">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Samsung Note 20 Ultra</h5>
+            <p class="card-text">RAM 12GB, penyimpanan 512GB, S Pen, dan teknologi 5G super cepat.</p>
+            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
@@ -59,18 +62,52 @@
       <!-- Card 3 -->
       <div class="col">
         <div class="card h-100">
-          <img src="s-z-fold6.jpeg" class="card-img-top" alt="Product 3">
-          <div class="card-body">
-            <h5 class="card-title">Samsung z fold 6</h5>
-            <p class="card-text">Samsung Galaxy Z Fold 6 adalah smartphone lipat flagship dengan desain ramping dan elegan. Ditenagai oleh Snapdragon 8 Gen 3, Z Fold 6 memiliki layar utama Dynamic AMOLED 2x 7,6 inci (QXGA+) dan layar cover 6,3 inci (HD+) dengan refresh rate 120Hz. Perangkat ini juga dilengkapi dengan RAM 12GB dan penyimpanan internal 256GB, 512GB, atau 1TB.git</p>
-            <a href="#" class="btn btn-success w-100">Buy Now</a>
+          <img src="s-z-fold6.jpeg" class="card-img-top" alt="Samsung Z Fold 6">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Samsung Z Fold 6</h5>
+            <p class="card-text">Layar utama 7.6", Snapdragon 8 Gen 3, RAM 12GB, desain lipat inovatif.</p>
+            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
+
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="galaxy-a55.jpeg" class="card-img-top" alt="Samsung Galaxy A55">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Samsung Galaxy A55</h5>
+            <p class="card-text">Exynos 1480, layar 6.6" Super AMOLED, baterai 5000mAh.</p>
+            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="samsung-m14.jpeg" class="card-img-top" alt="Samsung M14 5G">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Samsung M14 5G</h5>
+            <p class="card-text">Exynos 1330, kamera 50MP, baterai jumbo 6000mAh, koneksi 5G.</p>
+            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="galaxy-s23-fe.jpeg" class="card-img-top" alt="Samsung S23 FE">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Samsung S23 FE</h5>
+            <p class="card-text">Snapdragon 8 Gen 1, layar 120Hz, kamera 50MP OIS.</p>
+            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- Bootstrap JS (optional for features like dropdowns) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
