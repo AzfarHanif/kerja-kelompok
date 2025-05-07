@@ -200,6 +200,12 @@
     width: 50px;
   }
 
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   /* .card-side button {
     padding: 5px 10px;
     border: 1px solid green;
@@ -387,6 +393,10 @@
     .navbar .btn-outline-primary {
       width: 100%;
       margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 0.5rem;
     }
   }
 
