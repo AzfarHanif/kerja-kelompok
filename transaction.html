@@ -9,17 +9,50 @@
 </head>
 <body>
 
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <a class="navbar-brand" href="#">LOGO! IPSUM</a>
-    <div class="ms-auto d-flex gap-2">
-      <input class="form-control me-2" type="search" placeholder="Search here">
-      <button class="btn btn-success">Search</button>
-      <button class="btn btn-outline-secondary">🛒</button>
-      <button class="btn btn-outline-primary">Log In</button>
-      <button class="btn btn-primary">Sign Up</button>
-      <button class="trigger-btn" onclick="showPopup()"><img src="star.png" alt=""></button>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar scroll</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="searchingpage.html">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" >Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPopup()">Settings</a>
+          </li>
+          <li>
+            <a href="login.html"><button class="btn btn-outline-primary">Log In</button></a>
+          </li>
+          <li>
+            <button class="btn btn-primary" style="margin-left: 10px;">Sign Up</button>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </nav> 
+  </nav>
+  <!-- Navbar -->
 
   <div class="layout">
     <div class="left-wrapper">
@@ -32,12 +65,13 @@
         <br><br><br>
         <button class="left-top-button">ganti</button>
       </div>
+
       <div class="left-bottom">
         <h2>Left Bottom</h2>
         <p>This is the bottom left panel.</p>
         <div class="imagesection">
           <div class="imgleftsection">
-            <img src="Note-20Ultra.png" alt="small icon" class="small-image">
+            <img src="assets/phone/Note-20Ultra.png" alt="small icon" class="small-image">
           </div>
           <div class="imgrightsection">
             <h3>Samsung Note 20 Ultra 12/512GB</h3>
@@ -48,7 +82,7 @@
               </tr>
               <tr>
                 <td>Pakai Asuransi Pengiriman (Rp200)</td>
-                <td style="text-align: right;">
+                <td>
                   <button type="button" class="table-button">Apply</button>
                 </td>
               </tr>
@@ -63,7 +97,6 @@
             </table>
           </div>
         </div>
-       
       </div>
     </div>
 

@@ -201,32 +201,25 @@
     height: 100vh;
     gap: 20px;
     padding: 80px;
+    align-items: stretch; /* Ensures equal height */
   }
-
-  .left-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-    gap: 20px;
-  }
-
-  .left-top,
-  .left-bottom {
-    padding: 20px;
-    border-radius: 15px;
-    border: ridge;
-  }
-
+  
+  .left-wrapper,
   .right {
-    flex: 2;
-    padding: 20px;
-    border: ridge;
-    border-radius: 8px;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    height: 650px;
   }
+  
+  .left-top,
+  .left-bottom
+  .right {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    border: ridge;
+  }
+  
 
   /* ===== TABLES & IMAGE SECTIONS ===== */
   .left-table,
