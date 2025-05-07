@@ -184,14 +184,13 @@
 
   /* ===== CARD SIDE (e.g. Checkout Panel) ===== */
   .card-side {
-    width: fit-content;
+    width: 100%;        /* Parent mengisi lebar penuh */
+    max-width: 450px;   /* Maksimum lebar (opsional) */
     height: fit-content;
-    flex: none;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
     border: ridge;
     margin: 10px;
     border-radius: 18px;
@@ -201,21 +200,34 @@
     width: 50px;
   }
 
-  .card-side button {
+  /* .card-side button {
     padding: 5px 10px;
     border: 1px solid green;
     background-color: white;
     cursor: pointer;
     width: 100%;
+  } */
+
+  .card-side .add, .card-side .buy {
+    border-radius: 8px;
+    width: 100%; /* Mengisi lebar penuh parent */
+    max-width: 900px; /* Maksimum lebar (opsional) */
+    display: block; /* Membuat tombol menjadi block element */
+    padding: 10px; /* Padding untuk estetika */
+    text-align: center; /* Teks ditengah */
+    border: none; /* Menghilangkan border default */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar */
   }
 
-  .card-side .add {
-    background-color: green;
-    color: white;
+  .card-side .add{
+    background-color: #555;
+    color: whitesmoke;
   }
 
   .card-side .buy {
-    color: green;
+    background-color: green;
+    color: white;
   }
 
   /* ===== LAYOUT SECTION ===== */
