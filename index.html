@@ -62,82 +62,195 @@
     .h2 {
       text-shadow: #333;
     }
-    .electronic {
+    .navbar ul {
+      padding: 25px 20px;
+      font-size: 15px;
       font-weight: bold;
+      text-align: center;
+    }
+    .carousel-wrapper {
+      height: 400px;
+      position: relative;
+      width: 800px;
+      display: block;
+      margin: 50px auto;
+      border: 2px solid black;
+
+    }
+    .carousel-item {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 25px 50px;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+    .arrow{
+      border: solid;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+    }
+    .arrow-prev{
+      left: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(135deg);
+    }
+    .arrow-next{
+      right: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+    [id^="item"] {
+      display: none;
+    }
+    .item-1 {
+      z-index: 2;
+      opacity: 1;
+      background: url('Premium Photo _ Digital marketing concept, Shopping Online on mobile application, Web banner background, 3d rendering.jpeg c:\Users\DIRA-\Downloads\Shopping online and delivery service on mobile application 3d rendering _ Premium Photo.jpeg');
+      background-size: cover;
+    }
+    .item-2 {
+      background: url('Shopping\ online\ and\ delivery\ service\ on\ mobile\ application\ 3d\ rendering\ _\ Premium\ Photo.jpeg');
+      background-size: cover;
+    }
+    .item-3 {
+      background: url('Fashion\,\ Beauty\,\ Toys\,\ Home\ Furniture\ &\ More.jpeg');
+      background-size: cover;
+    }
+
+    *:target ~ .item-1{
+      opacity: 0;
+    }
+    #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+    #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    
     }
   </style>
 </head>
 <body>
 <!--search and category-->
-  <div class="container-fluid border-bottom py-3">
-    <div class="d-flex align-items-center justify-content-between">
-      <a class="navbar-brand" href="#">
-        <img src="Screenshot 2025-04-23 123100.png" alt="Logo" width="120">
-      </a>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid align align">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Cart</a>
-              </li>   
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item"> >   Electronic</a></li> 
-                  <li><a class="dropdown-item" href="#"> Gaming Console</a></li>
-                  <li><a class="dropdown-item" href="#"> AC</a></li>
-                  <li><a class="dropdown-item" href="#"> Washing Mechine</a></li>
-                  <li><a class="dropdown-item" href="#"> TV & accessories</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item"> > Food & Drinks</a></li>
-                      <li><a class="dropdown-item" href="#"> Diary & Eggs</a></li>
-                      <li><a class="dropdown-item" href="#"> Snacks</a></li>
-                      <li><a class="dropdown-item" href="#"> Bevrages</a></li>
-                      <li><a class="dropdown-item" href="#"> Canned Food</a></li>
-                      <li><a class="dropdown-item" href="#"> Food Staples</a></li>                          
-                      <li><a class="dropdown-item" href="#"> Bakery</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item"> > Beauty & Care</a></li>
-                      <li><a class="dropdown-item" href="#">Face Makeup</a></li>
-                      <li><a class="dropdown-item" href="#">Eyes Makeup</a></li>
-                      <li><a class="dropdown-item" href="#">Bath & Body Care</a></li>
-                      <li><a class="dropdown-item" href="#">Hand Care</a></li>
-                  </ul> 
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>       
+<nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar scroll</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="searchingpage.html">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"> >   Electronic</a></li> 
+            <li><a class="dropdown-item" href="#"> Gaming Console</a></li>
+            <li><a class="dropdown-item" href="#"> AC</a></li>
+            <li><a class="dropdown-item" href="#"> Washing Mechine</a></li>
+            <li><a class="dropdown-item" href="#"> TV & accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item"> > Food & Drinks</a></li>
+                <li><a class="dropdown-item" href="#"> Diary & Eggs</a></li>
+                <li><a class="dropdown-item" href="#"> Snacks</a></li>
+                <li><a class="dropdown-item" href="#"> Bevrages</a></li>
+                <li><a class="dropdown-item" href="#"> Canned Food</a></li>
+                <li><a class="dropdown-item" href="#"> Food Staples</a></li>                          
+                <li><a class="dropdown-item" href="#"> Bakery</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item"> > Beauty & Care</a></li>
+                <li><a class="dropdown-item" href="#">Face Makeup</a></li>
+                <li><a class="dropdown-item" href="#">Eyes Makeup</a></li>
+                <li><a class="dropdown-item" href="#">Bath & Body Care</a></li>
+                <li><a class="dropdown-item" href="#">Hand Care</a></li>
+      </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showPopup()">Settings</a>
+        </li>
+        <li>
+          <a href="login.html"><button class="btn btn-outline-primary">Log In</button></a>
+        </li>
+        <li>
+          <button class="btn btn-primary" style="margin-left: 10px;">Sign Up</button>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
   </div>
-
+</nav>
+  <br><br>
 
   <div class="container-fluid green-banner">
     <div class="container d-flex justify-content-between gap-4">
-      <div class="flex-fill card-placeholder" width=""></div>
+      <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+    
+        <div class="carousel-item item-1"></div>
+          <a href="Fashion, Beauty, Toys, Home Furniture & More.jpeg" class="arrow-prev arrow"></a>
+          <a href="Shopping online and delivery service on mobile application 3d rendering _ Premium Photo.jpeg"
+    
+        <div class="carousel-item item-2"></div>
+          <a href="Premium Photo _ Digital marketing concept, Shopping Online on mobile application, Web banner background, 3d rendering.jpeg" class="arrow-prev arrow"></a>
+          <a href="Fashion, Beauty, Toys, Home Furniture & More.jpeg" class="arrow-next arrow"></a>
+        </div>
+    
+        <div class="carousel-item item-3"></div>
+          <a href="Shopping online and delivery service on mobile application 3d rendering _ Premium Photo.jpeg" class="arrow-prev arrow"></a>
+          <a href="Premium Photo _ Digital marketing concept, Shopping Online on mobile application, Web banner background, 3d rendering.jpeg" class="arrow-next arrow"></a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <br><br>
   <div class="container my-4">
     <div class="row">
       <div class="col-md-9">
         <div class="top-picks">
         <h2 class="mb-4">Top Picks</h2>
             <div class="d-flex gap-3">
-             <div class="card-placeholder flex-fill"></div>
-             <div class="card-placeholder flex-fill"></div>
-             <div class="card-placeholder flex-fill"></div> 
-             <div class="card-placeholder flex-fill"></div>
-            </div>
+              <div class="card" style="width: 18rem;">
+                <img src="sneakerslol.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><h3>sneakers</h3></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="hironono.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><h3>Figurines</h3></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="diary.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><h3>Diaries and Beverages</h3></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="snacks.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><h3>Snacks</h3></p>
+                </div>
+              </div>
         </div>
       </div>
       <div class="col-md-3">
@@ -147,15 +260,13 @@
           <a href="#" class="btn btn-link p-0">Click here &rarr;</a>
         </div>
       </div>
-    </div>
-  </div>
-  <br><br>
+
  <!--products-->
 
  <section id="Products" class="Products">
   <h2 class="text-center my-5">Our Products!</h2>
   <div class="container">
-    <div class="row g-4">
+    <div class="row g-5">
       <div class="col-4">
         <div class="card">
           <img src="image.png" class="card-img-top" alt="...">
