@@ -302,16 +302,18 @@
 
   .promo {
     border: ridge;
-    border-color: aqua;
-    background-color: skyblue;
+    border-color: rgb(106, 106, 106);
+    background-color: lightblue;
     border-radius: 5px;
     width: 100%;
     text-align: center;
+    color: #1e1e1e;
   }
 
   .dark-mode .promo {
     border-color: whitesmoke;
-    background-color: rgb(16, 16, 106);
+    background-color: darkblue;
+    color: #e9f8ea;
   }
 
   /* ===== REVIEW SECTION ===== */
