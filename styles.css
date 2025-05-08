@@ -314,6 +314,8 @@
     width: 100%;
     text-align: center;
     color: #1e1e1e;
+    margin-top: 20px;
+    border-radius: 8px;
   }
 
   .dark-mode .promo {
@@ -626,15 +628,13 @@
       padding-right: 10px;     
     }
 
-    .right-table-bottom{
+    /* .right-table-bottom{
       margin-top: 30px;
       border: ridge;
       border-color: aqua;
       background-color: skyblue;
-      /* background-color: whitesmoke; */
-      /* width: 400px; */
       border-radius: 5px;
-    }
+    } */
 
     .summary-table {
       padding-top: 10px;
@@ -665,8 +665,7 @@
     .table-button{
       background-color: green;
       color: white;
-      width: 50px;
-      height: 20px;
+      border-radius: 5px;
       padding: 12 24px;
     }
 
