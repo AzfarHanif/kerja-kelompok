@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container, .shopping-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+    #shopping-card {
+      display: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="tutorial-box">
+    <h2>Tutorial</h2>
+    <p>Start quick tutorial?</p>
+    <button id="start-tutorial">Lets go!</button>
+  </div>
+
+  <div id="shopping-card">
+    <h3>Shopping Card</h3>
+    <ul>
+      <li>Item 1 - $10</li>
+      <li>Item 2 - $15</li>
+      <li>Item 3 - $20</li>
+    </ul>
+    <p><strong>Total: $45</strong></p>
+  </div>
+
+  <script>
+    document.getElementById("start-tutorial").addEventListener("click", function() {
+      document.getElementById("tutorial-box").style.display = "none";
+      document.getElementById("shopping-card").style.display = "block";
+    });
+  </script>
+</body>
+</html>
