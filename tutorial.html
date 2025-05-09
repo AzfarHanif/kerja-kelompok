@@ -42,7 +42,7 @@
         #tutorial-box button {
             width: 100%;
             padding: 10px;
-            background-color: #00a859;
+            background-color: #595959;
             color: white;
             border: none;
             border-radius: 5px;
@@ -50,9 +50,22 @@
         }
 
         #tutorial-box button:hover {
-            background-color: #008d4e;
+            background-color: #6e6e6e;
         }
 
+        #shopping-card button {
+            width: 100%;
+            padding: 10px;
+            background-color: #595959;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #shopping-card button:hover {
+            background-color: #6e6e6e;
+        }
   </style>
 </head>
 <body>
@@ -63,10 +76,18 @@
   </div>
 
   <div id="shopping-card">
-    <h3>Cart</h3>
-    <p>Here, you can view your items that you've saved into the cart!</p> <br>
+    <h3>Login & Sign up</h3>
+    <p>Before you start adding items to cart, its better if you login to your account or sign up if you dont have one</p>
     <h3>Cart</h3>
     <p>Here, you can view your items that you've saved into the cart!</p>
+    <h3>Shop</h3>
+    <p>This page shows plenty of items you've searched</p>
+    <h3>Payment</h3>
+    <p>After you head to the cart section, you can check out items in your cart and choose your payment methode!</p> <br>
+    <h3>Ready to shop?</h3>
+    
+    <button class="shop" onclick="window.location.href='index.html';">Click here!</button>
+    
   </div>
 
   <script>
