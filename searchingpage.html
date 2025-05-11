@@ -11,18 +11,55 @@
 </head>
 <body>
 
-  <!-- Header/Navbar -->
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <a class="navbar-brand" href="#">LOGO! IPSUM</a>
-    <div class="ms-auto d-flex gap-2">
-      <input class="form-control me-2" type="search" placeholder="Search here">
-      <button class="btn btn-success">Search</button>
-      <button class="btn btn-outline-secondary">🛒</button>
-      <button class="btn btn-outline-primary">Log In</button>
-      <button class="btn btn-primary">Sign Up</button>
-      <button class="trigger-btn" onclick="showPopup()">Buka Lokasi</button>
+  
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar scroll</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="searchingpage.html">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" >Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPopup()">Settings</a>
+          </li>
+          <li>
+            <a href="login.html"><button class="btn btn-outline-primary">Log In</button></a>
+          </li>
+          <li>
+            <button class="btn btn-primary" style="margin-left: 10px;">Sign Up</button>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </nav>  
+  </nav>
+  <!-- Navbar -->
+
+  <div class="layout">
+    <div class="left-wrapper">
+      <div class="left-top">
 
   <!-- Main Content -->
   <div class="container my-5">
@@ -35,7 +72,7 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Samsung S25 Ultra</h5>
             <p class="card-text">Layar 6,9" AMOLED QHD+, Snapdragon 8 Elite, kamera 200MP, RAM 12GB, hingga 1TB.</p>
-            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+            <a href="s25Ultra-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
@@ -47,7 +84,7 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Samsung Note 20 Ultra</h5>
             <p class="card-text">RAM 12GB, penyimpanan 512GB, S Pen, dan teknologi 5G super cepat.</p>
-            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+            <a href="buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
@@ -59,7 +96,7 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Samsung Z Fold 6</h5>
             <p class="card-text">Layar utama 7.6", Snapdragon 8 Gen 3, RAM 12GB, desain lipat inovatif.</p>
-            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+            <a href="zfold6-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
@@ -72,7 +109,7 @@
             <h5 class="card-title">Samsung Galaxy A56</h5>
             <p class="card-text">layar Super AMOLED 6,7 inci yang mendukung refresh rate 120Hz, chipset Exynos 1580, RAM 8GB/12GB. 
            </p>
-            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+            <a href="a56-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
@@ -84,7 +121,7 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Samsung S24 FE</h5>
             <p class="card-text">Layar AMOLED berukuran 6.7 inci dengan resolusi 1080 x 2340 piksel dan refresh rate 120Hz. , koneksi 5G.</p>
-            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+            <a href="s24fe-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
           </div>
         </div>
       </div>
