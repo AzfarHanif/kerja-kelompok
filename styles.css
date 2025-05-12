@@ -253,7 +253,7 @@
   }
   
   .left-top,
-  .left-bottom
+  .left-bottom, 
   .right {
     flex: 1;
     padding: 20px;
@@ -330,6 +330,13 @@
     border: ridge;
     border-radius: 18px;
   }
+
+   .section img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
 
   .row-review {
     display: flex;

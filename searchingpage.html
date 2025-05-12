@@ -15,28 +15,17 @@
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar scroll</a>
+            <a class="navbar-brand" href="#">Logo Ipsum</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="searchingpage.html">Shop</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Link
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#" >Something else here</a></li>
-            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="showPopup()">Settings</a>
@@ -45,7 +34,7 @@
             <a href="login.html"><button class="btn btn-outline-primary">Log In</button></a>
           </li>
           <li>
-            <button class="btn btn-primary" style="margin-left: 10px;">Sign Up</button>
+            <a href="signup.html"><button class="btn btn-primary" style="margin-left: 10px;">Sign Up</button></a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -57,86 +46,57 @@
   </nav>
   <!-- Navbar -->
 
-  <div class="layout">
-    <div class="left-wrapper">
-      <div class="left-top">
-
   <!-- Main Content -->
-  <div class="container my-5">
-    <h3 class="mb-4">Samsung Smartphone Deals</h3>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/phone/S25-Ultra.png" class="card-img-top" alt="Samsung S25 Ultra">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Samsung S25 Ultra</h5>
-            <p class="card-text">Layar 6,9" AMOLED QHD+, Snapdragon 8 Elite, kamera 200MP, RAM 12GB, hingga 1TB.</p>
-            <a href="s25Ultra-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
+      <class class="recomendation"><h1 style="padding-left: 40px;">Phone List</h1>
+        <section class="products">
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/phone/S25-Ultra.png" alt="Galaxy S25 Ultra" />
+            <h3>Galaxy S25 Ultra</h3>
+            <p>Mulai dari Rp 24.999.000</p>
+            <a href="s25Ultra-buy-page.html" class="btn">Beli Sekarang</a>
           </div>
+          <div class="product-card">
+            <img src="assets/phone/Z-Fold6.png" alt="Galaxy Z Fold 6" />
+            <h3>Galaxy Z Fold 6</h3>
+            <p>Mulai dari Rp 25.499.000</p>
+            <a href="zfold6-buy-page.html" class="btn">Beli Sekarang</a>
+          </div>
+          <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
         </div>
-      </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/phone/Note20Ultra.png" alt="Galaxy Note 20 Ultra" />
+            <h3>Galaxy Note 20 Ultra</h3>
+            <p>Mulai dari Rp 19.999.000</p>
+            <a href="buy-page.html" class="btn">Beli Sekarang</a>
+          </div>
+          <div class="product-card">
+            <img src="assets/phone/A56-5G.png" alt="Galaxy A56 5G" />
+            <h3>Galaxy A56 5G</h3>
+            <p>Mulai dari Rp 5.499.000</p>
+            <a href="a56-buy-page.html" class="btn">Beli Sekarang</a>
+          </div>
+          <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/phone/s-23-fe-new.png" alt="Galaxy S23FE" />
+            <h3>Galaxy S23FE</h3>
+            <p>Mulai dari Rp 7.999.000</p>
+            <a href="buy-page.html" class="btn">Beli Sekarang</a>
+          </div>
+          <div class="product-card">
+            <img src="assets/phone/S24FE.png" alt="Galaxy A56 5G" />
+            <h3>Galaxy S24FE</h3>
+            <p>Mulai dari Rp 9.499.000</p>
+            <a href="a56-buy-page.html" class="btn">Beli Sekarang</a>
+          </div>
+          <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+        </div>
+      </section>
+    </class> 
 
-      <!-- Card 2 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/phone/Note20Ultra.png" class="card-img-top" alt="Samsung Note 20 Ultra">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Samsung Note 20 Ultra</h5>
-            <p class="card-text">RAM 12GB, penyimpanan 512GB, S Pen, dan teknologi 5G super cepat.</p>
-            <a href="buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/phone/Z-Fold6.png" class="card-img-top" alt="Samsung Z Fold 6">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Samsung Z Fold 6</h5>
-            <p class="card-text">Layar utama 7.6", Snapdragon 8 Gen 3, RAM 12GB, desain lipat inovatif.</p>
-            <a href="zfold6-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/phone/A56-5G.png" class="card-img-top" alt="Samsung Galaxy A55">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Samsung Galaxy A56</h5>
-            <p class="card-text">layar Super AMOLED 6,7 inci yang mendukung refresh rate 120Hz, chipset Exynos 1580, RAM 8GB/12GB. 
-           </p>
-            <a href="a56-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/phone/S24FE.png" class="card-img-top" alt="Samsung M14 5G">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Samsung S24 FE</h5>
-            <p class="card-text">Layar AMOLED berukuran 6.7 inci dengan resolusi 1080 x 2340 piksel dan refresh rate 120Hz. , koneksi 5G.</p>
-            <a href="s24fe-buy-page.html" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/phone/s-23-fe-new.png" class="card-img-top" alt="Samsung S23 FE">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Samsung S23 FE</h5>
-            <p class="card-text">Snapdragon 8 Gen 1, layar 120Hz, kamera 50MP OIS.</p>
-            <a href="#" class="btn btn-buy-now mt-auto w-100">Buy Now</a>
-          </div>
-        </div>
-      </div>
 
       <div class="overlay" id="popupOverlay">
         <div class="popup">
@@ -154,9 +114,6 @@
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
 
   <script src="scripts.js"></script>
 </body>
